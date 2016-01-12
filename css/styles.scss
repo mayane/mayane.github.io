@@ -1,0 +1,210 @@
+$noir:#111;
+$police:Dosis,
+Arial,
+sans-serif;
+$vert:#5c7;
+body {
+    margin: 0 auto;
+    font-size: 14px;
+    position: relative;
+    color: $noir;
+    font-family: Arial, sans-serif;
+}
+
+.inner {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 3.5em
+}
+
+#main_content {
+    background: #f3f1ea url(/images/symphony.png) repeat;
+}
+
+.bloc {
+    background: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 8px 0px #ddd;
+}
+
+a {
+    color: $vert;
+    border-bottom: 1px dashed $vert;
+    padding-bottom: .2em;
+}
+
+a:hover {
+    color: $noir;
+    border-bottom: 1px dashed $noir;
+    text-decoration: none
+}
+
+.fa {
+    background: #fff;
+    border-color: $vert;
+    text-align: center;
+    margin: 0 10px;
+}
+
+nav.navbar-inverse .navbar-brand,
+nav.navbar-inverse .navbar-brand:hover {
+    color: #fff
+}
+
+h1,
+nav {
+    font-family: $police;
+}
+
+h1 {
+    text-shadow: 5px 8px 5px #bbb;
+    font-weight: bold;
+}
+
+h1 strong {
+    font-size: 2em;
+    color: $vert;
+}
+
+header h1 {
+    text-shadow: none;
+}
+
+h1 .fa {
+    width: 150px;
+    margin: 30px;
+    text-shadow: none;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 0 0 1em
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+
+/** NAVIGATION **/
+
+nav a {
+    color: $noir;
+    text-decoration: none;
+    font-weight: 700;
+    border: none
+}
+
+nav a:hover,
+nav .active a {
+    color: $vert;
+    text-decoration: none;
+    border: none
+}
+
+nav .fa {
+    width: 25px;
+}
+
+nav .active a .fa,
+nav a:hover .fa {
+    color: $noir
+}
+
+
+/** EXPERIENCES / FORMATIONS **/
+
+.entreprise {
+    font-weight: 700
+}
+
+.lieu {
+    font-style: italic
+}
+
+.annee {
+    color: $vert
+}
+
+.description {
+    margin: 1em 0 0
+}
+
+
+/** COMPETENCES **/
+
+#competences ul {
+    list-style: none
+}
+
+#competences li {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    padding: 3px 6px;
+    display: inline-block
+}
+
+footer {
+    font-size: 1.5em
+}
+
+footer a {
+    display: block
+}
+
+.list-unstyled li {
+    margin: 0 0 .5em
+}
+
+#competences li a,
+#competences li a:hover {
+    border-bottom: none
+}
+
+
+/** RESPONSIVE **/
+
+
+/* ecran <1024 */
+
+@media screen and (max-width: 1024px) {}
+
+
+/* ecran >1024 */
+
+@media screen and (min-width: 1024px) {
+    .inner {
+        width: 960px;
+    }
+    footer ul {
+        text-align: justify;
+        /* Opera, Safari, Google Chrome */
+        -webkit-column-count: 4;
+        /* Firefox */
+        -moz-column-count: 4;
+        /* Internet Explorer */
+        column-count: 4;
+        /* espace de séparation */
+        -webkit-column-gap: 50px;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        /* liseret de séparation */
+        -webkit-column-rule: 1px solid #9d9d9d;
+        -moz-column-rule: 1px solid #9d9d9d;
+        column-rule: 1px solid #9d9d9d;
+        /* césure */
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+}
