@@ -68,72 +68,78 @@ h1 strong {
   font-size: 2em;
   color: #5c7; }
 
-/* line 75, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 77, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+h1,
+h2,
+h3 {
+  font-weight: 700; }
+
+/* line 81, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 header h1 {
   text-shadow: none; }
 
-/* line 79, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 85, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 h1 .fa {
   width: 150px;
   margin: 30px;
   text-shadow: none; }
 
-/* line 85, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 91, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 h2 {
   font-size: 1.4em;
   margin: 0 0 1em; }
 
-/* line 90, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 96, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 h3 {
   font-size: 1.2em; }
 
 /** NAVIGATION **/
-/* line 97, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 103, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 nav a {
   color: #111;
   text-decoration: none;
   font-weight: 700;
   border: none; }
 
-/* line 105, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 111, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 nav a:hover,
 nav .active a {
   color: #5c7;
   text-decoration: none;
   border: none; }
 
-/* line 111, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 117, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 nav .fa {
   width: 25px; }
 
-/* line 116, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 122, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 nav .active a .fa,
 nav a:hover .fa {
   color: #111; }
 
 /** EXPERIENCES / FORMATIONS **/
-/* line 123, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 129, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 .entreprise {
   font-weight: 700; }
 
-/* line 127, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 133, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 .lieu {
   font-style: italic; }
 
-/* line 131, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 137, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 .annee {
   color: #5c7; }
 
-/* line 135, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 141, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 .description {
   margin: 1em 0 0; }
 
 /** COMPETENCES **/
-/* line 142, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 148, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 #competences ul {
   list-style: none; }
 
-/* line 146, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 152, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 #competences li {
   background-color: #EEEEEE;
   border: 1px solid #CCCCCC;
@@ -143,31 +149,54 @@ nav a:hover .fa {
   padding: 3px 6px;
   display: inline-block; }
 
-/* line 156, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 162, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 footer {
   font-size: 1.5em; }
 
-/* line 160, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 166, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 footer a {
   display: block; }
 
-/* line 164, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 170, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 .list-unstyled li {
   margin: 0 0 0.5em; }
 
-/* line 169, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+/* line 175, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
 #competences li a,
 #competences li a:hover {
   border-bottom: none; }
 
+/* line 179, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+#siteperso a {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  background: #5c7;
+  color: #fff;
+  border-radius: .3em;
+  font-size: 1.3em;
+  border: none; }
+
+/* line 189, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+.navbar-toggle {
+  border-color: #fff; }
+
 /** RESPONSIVE **/
+@media screen and (max-width: 768px) {
+  /* line 197, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+  section h1 {
+    text-align: center; }
+  /* line 200, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+  h1 .fa {
+    display: block;
+    margin: 0 auto 0.2em; } }
+
 /* ecran <1024 */
 /* ecran >1024 */
 @media screen and (min-width: 1024px) {
-  /* line 185, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+  /* line 215, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
   .inner {
     width: 960px; }
-  /* line 188, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
+  /* line 218, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
   footer ul {
     text-align: justify;
     /* Opera, Safari, Google Chrome */
