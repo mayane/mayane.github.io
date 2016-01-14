@@ -176,7 +176,7 @@ footer a {
     border-bottom: none
 }
 
-#siteperso a {
+#siteperso a,#siteperso a:hover {
     display: inline-block;
     padding: .2em .5em;
     background: $vert;
@@ -186,7 +186,7 @@ footer a {
     border: none
 }
 
-.navbar-toggle {
+header .navbar-inverse .navbar-toggle {
     border-color: #fff
 }
 

@@ -167,7 +167,7 @@ footer a {
   border-bottom: none; }
 
 /* line 179, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
-#siteperso a {
+#siteperso a, #siteperso a:hover {
   display: inline-block;
   padding: 0.2em 0.5em;
   background: #5c7;
@@ -177,7 +177,7 @@ footer a {
   border: none; }
 
 /* line 189, /Applications/XAMPP/xamppfiles/htdocs/mayane.github.io/css/styles.scss */
-.navbar-toggle {
+header .navbar-inverse .navbar-toggle {
   border-color: #fff; }
 
 /** RESPONSIVE **/
