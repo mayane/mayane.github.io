@@ -61,10 +61,6 @@ $.extend($.validator.messages, {
     postalCodeCA: "Veuillez fournir un code postal valide."
 });
 
-$.validator.addMethod("telephoneformat", function (value, element) {
-    return this.optional(element) || /^[0-9]{10}$/i.test(value);
-}, "Le téléphone doit être composés de 10 chiffres avec aucun espace et caractères spéciaux.");
-
 //FORMULAIRE
 $("#monformulaire").validate({
     submitHandler: function (form) {
@@ -77,16 +73,16 @@ $("#monformulaire").validate({
             type: 'POST',
             data: serializedData,
             success: function (response) {
-                if (response.status == 'success') {
-                    $('#resultat').removeClass("has-error");
-                    $('#resultat').addClass("has-success");
+                if (response.status === 'success') {
+                    $('#resultat').removeClass("bg-danger");
+                    $('#resultat').addClass("bg-success");
                     $('html, body').animate({
                         scrollTop: $('#resultat').offset().top
                     }, 0);
                     $('#resultat').html("<p>" + response.message + "</p>");
                 } else {
-                    $('#resultat').removeClass("has-success");
-                    $('#resultat').addClass("has-error");
+                    $('#resultat').removeClass("bg-success");
+                    $('#resultat').addClass("bg-danger");
                     $('html, body').animate({
                         scrollTop: $('#resultat').offset().top
                     }, 0);
@@ -94,11 +90,6 @@ $("#monformulaire").validate({
                 }
             }
         });
-    },
-    rules: {
-        telephone: {
-            telephoneformat: true
-        }
     },
     errorElement: "span",
     errorClass: 'help-block col-md-12',
@@ -121,7 +112,7 @@ $("#monformulaire").validate({
         }
 
         if ($(element).has("non-requis")) {
-            if ($(element).val() != '') {
+            if ($(element).val() !== '') {
                 $(element).closest('.form-group').addClass('has-success');
             }
         }
